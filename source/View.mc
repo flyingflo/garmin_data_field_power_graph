@@ -23,8 +23,8 @@ class garmin_data_field_power_graphView extends DataFieldUtils.GraphDataField {
 		_y_min = 100;
 		_y_max = 500;
 		_y_thresh = 320 - _y_min;
-		_colors_bright = [Graphics.COLOR_TRANSPARENT, 0x0055ff, 0xff5500, 0xff00ff];
-		_colors_dark = [Graphics.COLOR_TRANSPARENT, 0x0000aa, 0xaa5500, 0xaa55ff];
+		_colors_bright = [Graphics.COLOR_TRANSPARENT, 0x00ffff, 0xffaaaa, 0xff55ff];
+		_colors_dark = [Graphics.COLOR_TRANSPARENT, 0x0000ff, 0xaa5500, 0xaa55ff];
 		_scale_x = false;
     }
 
