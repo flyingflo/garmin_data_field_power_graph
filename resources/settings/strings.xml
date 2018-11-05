@@ -1,0 +1,14 @@
+
+<strings>
+    <string id="filterlenTitle">Power value average</string>
+    <string id="filterlenPrompt">average seconds</string>
+    <string id="filterlen1">None</string>
+    <string id="filterlen3">3</string>
+    <string id="filterlen5">5</string>
+    <string id="filterlen10">10</string>
+   	<string id="yminTitle">Graph range minimum</string>
+   	<string id="ymaxTitle">Graph range maximum</string>
+   	<string id="ythrTitle">Graph color threshold</string>
+   	<string id="demoTitle">Show demo values</string>
+   	<string id="timingTitle">Show graph draw time in field label</string>
+</strings>

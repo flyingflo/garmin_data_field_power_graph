@@ -2,6 +2,8 @@ using Toybox.Application;
 
 class garmin_data_field_power_graphApp extends Application.AppBase {
 
+	var _field;
+
     function initialize() {
         AppBase.initialize();
     }
@@ -16,7 +18,10 @@ class garmin_data_field_power_graphApp extends Application.AppBase {
 
     //! Return the initial view of your application here
     function getInitialView() {
-        return [ new garmin_data_field_power_graphView() ];
+    	_field = new garmin_data_field_power_graphView();
+        return [ _field ];
     }
-
+	function onSettingsChanged() {
+    	_field.initialize();
+    }
 }

@@ -1,0 +1,9 @@
+<properties>
+    <property id="valavglen" type="number">3</property>
+    <property id="ymin" type="number">100</property>
+    <property id="ymax" type="number">500</property>
+    <property id="ythr" type="number">300</property>
+    <property id="demo" type="boolean">false</property>
+    <property id="timing" type="boolean">false</property>
+    
+</properties>

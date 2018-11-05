@@ -1,0 +1,30 @@
+
+<settings>
+	<setting propertyKey="@Properties.valavglen" title="@Strings.filterlenTitle"
+		prompt="@Strings.filterlenPrompt">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.filterlen1</listEntry>
+			<listEntry value="3">@Strings.filterlen3</listEntry>
+			<listEntry value="5">@Strings.filterlen5</listEntry>
+			<listEntry value="10">@Strings.filterlen10</listEntry>
+		</settingConfig>
+	</setting>
+	
+	<setting propertyKey="@Properties.ymin" title="@Strings.yminTitle">
+		<settingConfig type="numeric" min="0" max="10000"/>
+	</setting> 
+	<setting propertyKey="@Properties.ymax" title="@Strings.ymaxTitle">
+		<settingConfig type="numeric" min="0" max="10000"/>
+	</setting> 
+	<setting propertyKey="@Properties.ythr" title="@Strings.ythrTitle">
+		<settingConfig type="numeric" min="0" max="10000"/>
+	</setting> 
+	
+	
+	<setting propertyKey="@Properties.demo" title="@Strings.demoTitle">
+		<settingConfig type="boolean" />
+	</setting>
+	<setting propertyKey="@Properties.timing" title="@Strings.timingTitle">
+		<settingConfig type="boolean" />
+	</setting>
+</settings>

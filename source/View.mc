@@ -9,7 +9,6 @@ class garmin_data_field_power_graphView extends DataFieldUtils.GraphDataField {
         GraphDataField.initialize();
         _ref_value = "0000";
 
-        _val_avg_len = 3;
         label = "Power";
         if (_val_avg_len > 0) {
         	label += " [" + _val_avg_len + "s]";
@@ -19,13 +18,23 @@ class garmin_data_field_power_graphView extends DataFieldUtils.GraphDataField {
     }
 
     function fetchSettings() {
-		_histlen = 210;
-		_y_min = 100;
-		_y_max = 500;
-		_y_thresh = 320 - _y_min;
-		_colors_bright = [Graphics.COLOR_TRANSPARENT, 0x00ffff, 0xffaaaa, 0xff55ff];
-		_colors_dark = [Graphics.COLOR_TRANSPARENT, 0x0000ff, 0xaa5500, 0xaa55ff];
+    	// force sensible values
+    	if (Application.Properties.getValue("ymin") > Application.Properties.getValue("ymax")) {
+    		Application.Properties.setValue("ymax", Application.Properties.getValue("ymin") + 100);
+    	}
+
+
+		_y_min = Application.Properties.getValue("ymin");
+		_y_max = Application.Properties.getValue("ymax");
+		_y_thresh = Application.Properties.getValue("ythr") - _y_min;
+
+		_colors[:bright] = [Graphics.COLOR_WHITE, 0x00ffff, 0xffaaaa, 0xff55ff];
+		_colors[:dark] = [Graphics.COLOR_BLACK, 0x0000ff, 0xaa5500, 0xaa55ff];
 		_scale_x = false;
+
+        _val_avg_len = Application.Properties.getValue("valavglen");
+        _demo = Application.Properties.getValue("demo");
+        _timing = Application.Properties.getValue("timing");
     }
 
 
