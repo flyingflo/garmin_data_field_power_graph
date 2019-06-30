@@ -28,8 +28,10 @@ class garmin_data_field_power_graphView extends DataFieldUtils.GraphDataField {
 		_y_max = Application.Properties.getValue("ymax");
 		_y_thresh = Application.Properties.getValue("ythr") - _y_min;
 
-		_colors[:bright] = [Graphics.COLOR_WHITE, 0x00ffff, 0xffaaaa, 0xff55ff];
-		_colors[:dark] = [Graphics.COLOR_BLACK, 0x0000ff, 0xaa5500, 0xaa55ff];
+		_colors[:bright] = [Graphics.COLOR_WHITE, getColorSetting("color_b_lo", 0x00ffff),
+		getColorSetting("color_b_mid", 0xffaaaa), getColorSetting("color_b_hi", 0xff55ff)];
+		_colors[:dark] = [Graphics.COLOR_BLACK, getColorSetting("color_d_lo", 0x0000ff),
+		getColorSetting("color_d_mid",  0xaa5500), getColorSetting("color_d_hi", 0xaa55ff)];
 		_scale_x = false;
 
         _val_avg_len = Application.Properties.getValue("valavglen");

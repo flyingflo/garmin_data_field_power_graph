@@ -11,4 +11,11 @@
    	<string id="ythrTitle">Graph color threshold</string>
    	<string id="demoTitle">Show demo values</string>
    	<string id="timingTitle">Show graph draw time in field label</string>
+   	<string id="color_b_loTitle">Graph color bright low value</string>
+   	<string id="color_b_midTitle">Graph color bright mid value</string>
+   	<string id="color_b_hiTitle">Graph color bright high value</string>
+   	<string id="color_d_loTitle">Graph color dark low value</string>
+   	<string id="color_d_midTitle">Graph color dark mid value</string>
+   	<string id="color_d_hiTitle">Graph color dark high value</string>
+   	<string id="colorPrompt">Specify a Red-Green-Blue hex color string</string>
 </strings>

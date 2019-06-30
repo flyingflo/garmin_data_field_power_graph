@@ -5,5 +5,10 @@
     <property id="ythr" type="number">300</property>
     <property id="demo" type="boolean">false</property>
     <property id="timing" type="boolean">false</property>
-    
+	<property id="color_b_lo" type="string">0x00ffff</property>
+    <property id="color_b_mid" type="string">0xffaaaa</property>
+    <property id="color_b_hi" type="string">0xff55ff</property>
+    <property id="color_d_lo" type="string">0x0000ff</property>
+    <property id="color_d_mid" type="string">0xaa5500</property>
+    <property id="color_d_hi" type="string">0xaa55ff</property>
 </properties>

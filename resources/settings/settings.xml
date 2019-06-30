@@ -20,11 +20,28 @@
 		<settingConfig type="numeric" min="0" max="10000"/>
 	</setting> 
 	
-	
 	<setting propertyKey="@Properties.demo" title="@Strings.demoTitle">
 		<settingConfig type="boolean" />
 	</setting>
 	<setting propertyKey="@Properties.timing" title="@Strings.timingTitle">
 		<settingConfig type="boolean" />
+	</setting>
+		<setting propertyKey="@Properties.color_b_lo" title="@Strings.color_b_loTitle" prompt="@Strings.colorPrompt">
+		<settingConfig type="alphanumeric" />
+	</setting>
+	<setting propertyKey="@Properties.color_b_mid" title="@Strings.color_b_midTitle" prompt="@Strings.colorPrompt">>
+		<settingConfig type="alphanumeric" />
+	</setting>
+	<setting propertyKey="@Properties.color_b_hi" title="@Strings.color_b_hiTitle" prompt="@Strings.colorPrompt">>
+		<settingConfig type="alphanumeric" />
+	</setting>
+	<setting propertyKey="@Properties.color_d_lo" title="@Strings.color_d_loTitle" prompt="@Strings.colorPrompt">>
+		<settingConfig type="alphanumeric" />
+	</setting>
+	<setting propertyKey="@Properties.color_d_mid" title="@Strings.color_d_midTitle" prompt="@Strings.colorPrompt">>
+		<settingConfig type="alphanumeric" />
+	</setting>
+	<setting propertyKey="@Properties.color_d_hi" title="@Strings.color_d_hiTitle" prompt="@Strings.colorPrompt">>
+		<settingConfig type="alphanumeric" />
 	</setting>
 </settings>
